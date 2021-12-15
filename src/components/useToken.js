@@ -14,8 +14,13 @@ export default function useToken() {
     setToken(userToken.token);
   };
 
+  function logout() {
+    localStorage.removeItem('token');
+  }
+
   return {
     setToken: saveToken,
-    token
+    token,
+    logout
   }
 }
