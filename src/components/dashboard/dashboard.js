@@ -1,7 +1,7 @@
-import React from 'react'
-import Navbar from './components/navbarDashboard/navbar';
-import Login from './components/login/login';
-import  useToken  from './components/useToken';
+import React from 'react';
+import NavbarDashboard from '../navbarDashboard/navbar';
+import Login from '../login/login';
+import  useToken  from '../useToken';
 
 const Dashboard = () => {
     const { token, setToken } = useToken();
@@ -12,7 +12,7 @@ const Dashboard = () => {
 
     return (
         <div>
-            <Navbar/>
+            <NavbarDashboard/>
             <div>
                 <h1>Dashboard</h1>
             </div>

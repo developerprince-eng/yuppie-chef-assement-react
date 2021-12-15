@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap'; 
-import logout from '../components/useToken';
-const Navbar = () => {
+import  useToken  from '../useToken';;
+const NavbarDashboard = () => {
   const { logout } = useToken();
     return (
         <Navbar bg="light" expand="lg">
@@ -27,4 +27,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default NavbarDashboard
